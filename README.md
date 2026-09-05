@@ -64,5 +64,25 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-WorldViz is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+WorldViz LLC is a Santa Barbara, California virtual reality company that builds VR software and
+turnkey systems for academic research, training and simulation. Its developer surface is **Vizard**,
+a Python 3.13 VR development toolkit and IDE for Windows with a documented command reference of
+roughly 1,182 commands across 36 modules, extended by the **SightLab VR Pro** experiment-authoring
+plugin, the **Vizible** collaboration product, **PPT** precision motion tracking, and **PRISM**
+projection and simulation room systems.
+
+WorldViz publishes **no web API**. Probed 2026-09-04 across all eight of its public hosts
+(`worldviz.com`, `www.worldviz.com`, `docs.worldviz.com`, `help.worldviz.com`, `kb.worldviz.com`,
+`forum.worldviz.com`, `sightlab2.worldviz.com`, `vizmove-guide.worldviz.com`): no OpenAPI, Swagger,
+GraphQL SDL, AsyncAPI, Protobuf or WSDL contract; no `/.well-known/` document of any kind; no MCP
+server; no A2A agent card. What it does publish is a complete, sitemapped, human-readable Python
+command reference, dated Vizard release notes, a full end-user licence agreement, and version-pinned
+first-party installers.
+
+- Website — https://www.worldviz.com/
+- Documentation — https://docs.worldviz.com/vizard/latest/
+- Command reference — https://docs.worldviz.com/vizard/latest/commands/commandIndex.htm
+- Release notes — https://docs.worldviz.com/vizard/latest/highlights.htm
+- Downloads — https://www.worldviz.com/virtual-reality-software-downloads
+- Community forum — https://forum.worldviz.com/
+- GitHub — https://github.com/worldviz

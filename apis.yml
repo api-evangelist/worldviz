@@ -1,17 +1,33 @@
 aid: worldviz
 name: WorldViz
-description: 'WorldViz is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  WorldViz LLC is a Santa Barbara, California virtual reality company that builds VR software
+  and turnkey systems for academic research, training and simulation. Its developer surface is
+  Vizard, a Python 3.13 VR development toolkit and IDE for Windows with a documented command
+  reference of roughly 1,182 commands across 36 modules, extended by the SightLab VR Pro
+  experiment-authoring plugin, the Vizible collaboration product, PPT precision motion
+  tracking, and PRISM projection and simulation room systems. WorldViz publishes no web API:
+  no OpenAPI, AsyncAPI, GraphQL schema, MCP server, agent card or .well-known document was
+  found on any of its eight public hosts. Its machine-relevant surface is the Vizard Python
+  library reference, its dated release notes, and its downloadable installers.
+image: https://cdn.prod.website-files.com/5a9058c8f7462d00014ad4eb/5a9694b141e04900018b1626_worldviz%20logo%20thumbnail.png
 url: https://raw.githubusercontent.com/api-evangelist/worldviz/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-04'
 modified: '2026-09-04'
 tags:
-- Company
+- Virtual Reality
+- Augmented Reality
+- Simulation
+- Research
+- Training
+- 3D Graphics
+- Eye Tracking
+- Motion Tracking
+- Python
+- Software
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,71 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/worldviz-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.worldviz.com/
+- type: About
+  url: https://www.worldviz.com/about-worldviz
+- type: Documentation
+  url: https://docs.worldviz.com/vizard/latest/
+- type: APIReference
+  url: https://docs.worldviz.com/vizard/latest/commands/commandIndex.htm
+- type: GettingStarted
+  url: https://docs.worldviz.com/vizard/latest/Installation.htm
+- type: Tools
+  url: https://www.worldviz.com/virtual-reality-software-downloads
+- type: Support
+  url: https://www.worldviz.com/virtual-reality-support
+- type: Community
+  url: https://forum.worldviz.com/
+- type: HelpCenter
+  url: https://kb.worldviz.com/
+- type: FAQ
+  url: https://www.worldviz.com/vizard-vr-software-faq
+- type: Blog
+  url: https://www.worldviz.com/virtual-reality-blog
+- type: BlogRSS
+  url: https://www.worldviz.com/post/rss.xml
+- type: GitHubOrganization
+  url: https://github.com/worldviz
+- type: TermsOfService
+  url: https://docs.worldviz.com/vizard/latest/Legal_stuff.htm
+- type: Packages
+  url: packages/worldviz-packages.yml
+- type: ChangeLog
+  url: changelog/worldviz-changelog.yml
+- type: Lifecycle
+  url: lifecycle/worldviz-lifecycle.yml
+- type: Plans
+  url: plans/worldviz-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/worldviz-llms.txt
+x-enrichment:
+  date: '2026-09-04'
+  status: minimal
+  artifacts_added: 9
+  pass: local-v3
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: >-
+    WorldViz publishes a complete, crawlable Vizard command reference — 1,182 individual
+    command pages across 36 Python modules, sitemapped and readable by a human — but no
+    OpenAPI, AsyncAPI, GraphQL SDL, JSON Schema, Postman collection or .well-known document
+    exists on any of its eight hosts, because the toolkit is an installed Windows product
+    rather than a hosted API.
+  evidence:
+  - url: https://docs.worldviz.com/vizard/latest/commands/commandIndex.htm
+    status: 200
+  - url: https://docs.worldviz.com/vizard/latest/Sitemap.xml
+    status: 200
+  - url: https://docs.worldviz.com/openapi.json
+    status: 404
+  - url: https://www.worldviz.com/openapi.json
+    status: 404
+  - url: https://www.worldviz.com/.well-known/api-catalog
+    status: 404
+  - url: https://www.worldviz.com/.well-known/agent-card.json
+    status: 404
+  checked: '2026-09-04'

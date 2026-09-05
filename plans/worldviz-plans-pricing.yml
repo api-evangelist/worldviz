@@ -1,0 +1,68 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.worldviz.com/vizard-virtual-reality-software
+name: WorldViz Plans and Pricing
+description: >-
+  WorldViz names four Vizard licence editions and two paid support tiers, but publishes no
+  price for any of them. Every purchase path is a quote request, a contact-sales form, or a
+  US-only Amazon listing; international buyers are told to email sales@worldviz.com.
+plan_count: 4
+prices_published: false
+currency: USD
+billing_period: perpetual
+sources:
+- url: https://www.worldviz.com/vizard-virtual-reality-software
+  status: 200
+- url: https://www.worldviz.com/vizard-vr-software-faq
+  status: 200
+- url: https://www.worldviz.com/virtual-reality-software-sales
+  status: 200
+plans:
+- name: Free
+  price: 0
+  currency: USD
+  billing_period: perpetual
+  limits:
+  - Watermark overlay on rendered output
+  - 5-minute script runtime limit
+  - No SDK plugin support
+  note: Free perpetual licence, downloadable after a request form.
+- name: Academic
+  price: null
+  currency: USD
+  billing_period: perpetual
+  purchase: Amazon listing, US customers only
+  note: Price not published on any WorldViz page.
+- name: Development
+  price: null
+  currency: USD
+  billing_period: perpetual
+  purchase: Amazon listing (US only) or quote request
+  includes:
+  - All core Vizard features
+  - Publish and distribute standalone executable applications
+  note: Price not published on any WorldViz page.
+- name: Enterprise
+  price: null
+  currency: USD
+  billing_period: perpetual
+  purchase: contact sales
+  includes:
+  - Commercial distribution rights (e.g. selling on the Oculus Store)
+  - Advanced clustering for multi-computer projection VR / CAVE systems
+  - Millisecond synchronization across multi-person headset systems
+  - Live-streaming motion capture data for real-time avatar embodiment
+  note: Price not published on any WorldViz page.
+support_plans:
+- name: Silver Support
+  price: null
+  note: Direct engineer access via email ticketing and phone. Price not published.
+- name: Gold Support
+  price: null
+  note: Direct engineer access via email ticketing and phone. Price not published.
+quote_request: https://fi1eerz9.paperform.co
+contact: sales@worldviz.com
+pricing_pointer_withheld: >-
+  No `Pricing` pointer is emitted. WorldViz has no page that states a price — the sales page
+  is a contact form and the edition comparison carries no figures — so a Pricing pointer
+  would credit published pricing the company does not publish.

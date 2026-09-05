@@ -1,0 +1,80 @@
+generated: '2026-09-04'
+method: searched
+source: https://docs.worldviz.com/vizard/latest/Upgrade_guide.htm
+name: WorldViz Lifecycle and Versioning
+description: >-
+  Versioning, breaking-change and support posture for WorldViz's developer surface. WorldViz
+  ships desktop software (Vizard, SightLab VR Pro, Vizible) rather than a hosted API, so the
+  lifecycle signals that exist are product-release signals: a version scheme, a documented
+  upgrade/breaking-change guide, per-version archived documentation, and paid support tiers.
+  There is no hosted service, therefore no status page, no SLA and no API deprecation policy.
+subject: Vizard VR development toolkit (desktop software)
+versioning:
+  scheme: MAJOR.MINOR[.PATCH]
+  current: 8.3.1
+  documented_at: https://docs.worldviz.com/vizard/latest/highlights.htm
+  in_url: true
+  note: >-
+    Documentation is versioned by URL path — docs.worldviz.com/vizard/<version>/ — with
+    /vizard/latest/ aliasing the current release. Every archived build back to 3.18.0002 is
+    still served.
+breaking_changes:
+  documented: true
+  url: https://docs.worldviz.com/vizard/latest/Upgrade_guide.htm
+  http_status: 200
+  most_recent:
+    version: '8.0'
+    date: '2024-11-11'
+    changes:
+    - Bundled Python moved from 3.8 to 3.13
+    - Minimum OS raised to Windows 10
+    - PIL/Pillow unbundled; install via the Package Manager
+  note: >-
+    WorldViz publishes an upgrade guide naming what breaks between major versions. It names
+    the runtime and platform changes but does not enumerate deprecated or removed commands by
+    name, so a script author cannot mechanically diff their code against it.
+deprecation_policy:
+  published: false
+  sunset_headers: false
+  note: >-
+    No deprecation policy, no sunset schedule, no RFC 8594 Sunset/Deprecation headers — there
+    is no HTTP surface to carry them. The upgrade guide is a breaking-change narrative, not a
+    deprecation policy, so no `Deprecation` pointer is emitted.
+status_page:
+  published: false
+  probed:
+  - url: https://status.worldviz.com/
+    status: 000
+    note: DNS does not resolve.
+  note: >-
+    No status page. WorldViz operates no hosted API or tenant service whose availability
+    would be reported, so no `StatusPage` pointer is emitted.
+sla:
+  published: false
+  note: No published uptime or response-time SLA.
+support:
+  free:
+  - name: Community forum
+    url: https://forum.worldviz.com/
+    status: 200
+  - name: Knowledge base
+    url: https://kb.worldviz.com/
+    status: 200
+  - name: Documentation
+    url: https://docs.worldviz.com/vizard/latest/
+    status: 200
+  paid:
+  - name: Silver Support
+    channels: [email ticketing, phone]
+    price: not published
+  - name: Gold Support
+    channels: [email ticketing, phone]
+    price: not published
+  source: https://www.worldviz.com/vizard-vr-software-faq
+licensing:
+  model: perpetual
+  terms_url: https://docs.worldviz.com/vizard/latest/Legal_stuff.htm
+  note: >-
+    Vizard is licensed perpetually under an end-user licence agreement published in full in
+    the documentation. Licence activation is online or manual against WorldViz activation
+    servers; the activation protocol itself is not publicly documented.

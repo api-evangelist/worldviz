@@ -1,0 +1,43 @@
+generated: '2026-09-04'
+method: searched
+source: >-
+  Searched worldviz.com, docs.worldviz.com, help.worldviz.com, kb.worldviz.com,
+  github.com/worldviz and the public MCP server directories for a WorldViz MCP server.
+name: WorldViz MCP
+description: >-
+  WorldViz ships no Model Context Protocol server — neither a remote endpoint nor a
+  local-stdio package. No candidate tool list is derived, because there is no OpenAPI,
+  GraphQL SDL or other machine-readable contract in this repo to derive one from, and
+  inventing tools for a company with no API surface would be fabrication.
+status: none
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://github.com/worldviz
+  status: 200
+  note: >-
+    Three public repositories (utility-scripts, exp-kit, exp-kit-2), none of which is an MCP
+    server. exp-kit and exp-kit-2 are copies of a spec-driven-development starter toolkit.
+- url: https://www.worldviz.com/virtual-reality-support
+  status: 200
+  note: No MCP or agent-integration surface linked.
+adjacent_agent_surface:
+  name: SightLab VR Assistant
+  kind: OpenAI custom GPT
+  url: https://chatgpt.com/g/g-tgG8cOR5i-sightlab-vr-assistant
+  status: 200
+  operator: WorldViz (linked from worldviz.com navigation)
+  note: >-
+    WorldViz publishes a hosted custom GPT that answers SightLab/Vizard questions. It is a
+    real first-party agent-facing surface, but it is a chat assistant inside a third-party
+    platform — not an MCP server, not callable by an arbitrary agent, and it exposes no
+    tools/list. Recorded so the finding is not mistaken for an MCP deployment.
+pointer_withheld: >-
+  No `MCPServer` pointer. Emitting one for a record whose own deployment mode is `none` is
+  exactly the false-presence this pipeline forbids.

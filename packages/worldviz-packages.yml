@@ -1,0 +1,125 @@
+generated: '2026-09-04'
+method: searched
+source: https://www.worldviz.com/virtual-reality-software-downloads
+name: WorldViz Packages and Distributions
+description: >-
+  WorldViz distributes its developer surface as downloadable Windows software, not as
+  registry-published client libraries. Vizard is a Python-based VR development toolkit and
+  IDE installed on a workstation; SightLab VR Pro is a Vizard plugin; the OSG and Cal3D
+  exporters are 3ds Max plugins served as version-pinned installers from WorldViz's own S3
+  bucket. There is no npm, PyPI, Maven, NuGet, RubyGems, Packagist, crates.io or Go module
+  published by WorldViz, because there is no web API for a client library to wrap.
+registries_searched:
+- registry: pypi
+  result: no first-party package
+  note: >-
+    pypi.org/pypi/vizard/json returns HTTP 200 but the package is "Intuitive, Interactive,
+    Easy and Quick Visualizations for Data Science Projects" by Ritvik Rastogi
+    (github.com/Ritvik19). It is NOT WorldViz. No WorldViz-owned PyPI package was found.
+- registry: npm
+  result: no first-party package
+  note: >-
+    registry.npmjs.org/vizard returns HTTP 200 but is "An automated visual regression testing
+    framework" maintained by archinal/slmt/darren.nolan. It is NOT WorldViz.
+- registry: maven-central
+  result: not found
+- registry: nuget
+  result: not found
+- registry: rubygems
+  result: not found
+- registry: crates.io
+  result: not found
+- registry: pkg.go.dev
+  result: not found
+- registry: packagist
+  result: not found
+packages:
+- name: Vizard
+  kind: sdk
+  language: Python
+  platform: Windows
+  official: true
+  registry: direct-download
+  version: 8.3.1
+  published: '2025-12-05'
+  version_source: >-
+    docs.worldviz.com/vizard/latest/highlights.htm — documentation build stamp reads 8.3.1;
+    the newest dated release entry on that page is 8.3 (December 5, 2025).
+  download: https://264tz51r.paperform.co/
+  docs: https://docs.worldviz.com/vizard/latest/
+  reference: https://docs.worldviz.com/vizard/latest/commands/commandIndex.htm
+  note: >-
+    Python 3.13-based VR development toolkit and IDE. Distribution is gated behind a
+    Paperform download request, so no unauthenticated artifact URL or checksum is available
+    to probe. Editions: Free, Academic, Development, Enterprise.
+- name: SightLab VR Pro
+  kind: plugin
+  language: Python
+  platform: Windows
+  official: true
+  registry: direct-download
+  version: null
+  published: null
+  version_source: null
+  download: https://www.worldviz.com/request-sightlab-demo
+  docs: https://help.worldviz.com/sightlab/
+  examples: https://help.worldviz.com/sightlab/example-scripts-library
+  note: >-
+    Vizard plugin for building VR experiments with little or no code. Distribution is behind
+    a demo-request form; WorldViz publishes no version number or release date for it on any
+    public page probed, so version and published are honestly null rather than guessed.
+- name: OSG Exporter
+  kind: plugin
+  language: MAXScript/C++
+  platform: Windows (Autodesk 3ds Max)
+  official: true
+  registry: cdn
+  version: 1.5.2
+  published: null
+  version_source: >-
+    Version is pinned in the distribution URL itself (OSGExp1.5.2Install_x64.exe). The S3
+    object exposes no publish date and there is no registry metadata endpoint to query.
+  download: https://s3.amazonaws.com/s3.worldviz.com/exe/OSGExp1.5.2Install_x64.exe
+  download_alt: https://s3.amazonaws.com/s3.worldviz.com/exe/OSGExp1.5.2Install_win32.exe
+  http_status: 200
+  note: Exports 3ds Max models to OpenSceneGraph (.osgb), Vizard's native scene format.
+- name: Cal3D Exporter
+  kind: plugin
+  language: MAXScript/C++
+  platform: Windows (Autodesk 3ds Max 2006-2020)
+  official: true
+  registry: cdn
+  version: 1.7.4
+  published: null
+  version_source: >-
+    Version is pinned in the distribution URL itself (Cal3DExp1.7.4Install_x64.exe). No
+    registry metadata endpoint and no publish date exposed by the S3 object.
+  download: https://s3.amazonaws.com/s3.worldviz.com/exe/Cal3DExp1.7.4Install_x64.exe
+  download_alt: https://s3.amazonaws.com/s3.worldviz.com/exe/Cal3DExp1.7.4Install_win32.exe
+  http_status: 200
+  note: Exports rigged avatars from 3ds Max to Cal3D format for use in Vizard.
+- name: Live Characters Plugin
+  kind: plugin
+  platform: Windows
+  official: true
+  registry: none
+  version: null
+  published: null
+  version_source: null
+  download: null
+  note: >-
+    Real-time motion-capture avatar animation plugin. WorldViz publishes no download URL —
+    the downloads page directs the reader to sales@worldviz.com for access.
+package_manager:
+  name: Vizard Package Manager
+  docs: https://docs.worldviz.com/vizard/latest/Package_Manager.htm
+  direction: consumer
+  note: >-
+    Vizard ships a GUI package manager that searches and installs from PyPI (and accepts
+    local .whl files) into Vizard's bundled Python. It is a pip client — it CONSUMES the
+    Python ecosystem, it does not publish WorldViz packages to it. Recorded here so a reader
+    does not mistake it for a WorldViz-operated registry.
+sdk_pointer_withheld: >-
+  No `SDKs` pointer is emitted. WorldViz publishes no web API, so none of these downloads is
+  a client library for a WorldViz service; asserting an SDK count here would credit an API
+  integration surface that does not exist.

@@ -1,0 +1,102 @@
+# WorldViz
+
+> WorldViz LLC (Santa Barbara, California) builds virtual reality software and hardware
+> systems for academic research, training and simulation. Its developer surface is Vizard —
+> a Python 3.13 VR development toolkit and IDE installed on Windows — together with the
+> SightLab VR Pro experiment-authoring plugin, the Vizible collaboration product, PPT motion
+> tracking, and the PRISM projection/simulation room systems. WorldViz publishes no web API:
+> there is no OpenAPI, AsyncAPI, GraphQL schema, MCP server or agent card anywhere on its
+> hosts. What it does publish is a large, crawlable Python command reference — 1,182
+> individual command pages across 36 modules — which is the machine-readable-adjacent
+> contract for the toolkit.
+
+Provenance: generated 2026-09-04 by the API Evangelist enrichment pipeline from probed
+WorldViz sources. Not published by WorldViz. Every URL below returned HTTP 200 when probed
+on 2026-09-04.
+
+## Company
+
+- [WorldViz](https://www.worldviz.com/): Company home. VR software and systems for research,
+  training and simulation.
+- [About WorldViz](https://www.worldviz.com/about-worldviz): Company background.
+- [GitHub organization](https://github.com/worldviz): "WorldViz LLC", Santa Barbara CA.
+  Three public repositories; none is an API, SDK release or MCP server.
+
+## Developer surface — Vizard
+
+- [Vizard documentation](https://docs.worldviz.com/vizard/latest/): Vizard 8 manual. Current
+  documented build 8.3.1.
+- [Vizard command index](https://docs.worldviz.com/vizard/latest/commands/commandIndex.htm):
+  The Python API reference. 1,182 command pages across modules including node3d (319), viz
+  (224), vizact (56), window (49), transform (49), link (46), animationpath (44), viztask
+  (36), texture (32), multimedia (25), vizmat (22), viewpoint (22), vizcave (21), viznet,
+  vizshape, vizfx, hand, sensor, scene and physics.
+- [Installation](https://docs.worldviz.com/vizard/latest/Installation.htm): Getting started.
+- [What's New in Vizard 8](https://docs.worldviz.com/vizard/latest/highlights.htm): Dated
+  release notes — 8.3 (2025-12-05), 8.2 (2025-02-04), 8.1 (2024-12-23), 8.0 (2024-11-11).
+- [Upgrade guide](https://docs.worldviz.com/vizard/latest/Upgrade_guide.htm): Vizard 7 to 8
+  breaking changes — Python 3.8 to 3.13, Windows 10 minimum, PIL/Pillow unbundled.
+- [Package Manager](https://docs.worldviz.com/vizard/latest/Package_Manager.htm): Vizard's
+  GUI pip client for installing PyPI packages into its bundled Python. Consumes PyPI; does
+  not publish to it.
+- [Licence agreement](https://docs.worldviz.com/vizard/latest/Legal_stuff.htm): Vizard end
+  user licence agreement, published in full.
+
+## Downloads
+
+- [Software downloads](https://www.worldviz.com/virtual-reality-software-downloads):
+  Vizard (request form), SightLab VR Pro (demo request), OSG Exporter 1.5.2, Cal3D Exporter
+  1.7.4, Live Characters Plugin (contact sales).
+
+## SightLab VR Pro
+
+- [SightLab help](https://help.worldviz.com/sightlab/): Documentation for the Vizard
+  experiment-authoring plugin.
+- [Example scripts library](https://help.worldviz.com/sightlab/example-scripts-library):
+  Over 100 research templates.
+- [Supported devices](https://help.worldviz.com/supported-devices/): Headset, eye tracker
+  and tracking-hardware compatibility.
+- [SightLab VR Assistant](https://chatgpt.com/g/g-tgG8cOR5i-sightlab-vr-assistant):
+  WorldViz-published custom GPT. A chat assistant on a third-party platform — not an MCP
+  server and not callable as a tool.
+
+## Support and community
+
+- [Support](https://www.worldviz.com/virtual-reality-support)
+- [Contact support](https://www.worldviz.com/contact-virtual-reality-support)
+- [Community forum](https://forum.worldviz.com/)
+- [Knowledge base](https://kb.worldviz.com/)
+- [Vizard FAQ](https://www.worldviz.com/vizard-vr-software-faq): Editions, licensing, and
+  the Silver/Gold paid support tiers.
+
+## Commercial
+
+- [Vizard product page](https://www.worldviz.com/vizard-virtual-reality-software): Free,
+  Academic, Development and Enterprise editions. No prices published.
+- [Contact sales](https://www.worldviz.com/virtual-reality-software-sales): Quote request.
+  No published price list anywhere on the site.
+- [Partners](https://www.worldviz.com/virtual-reality-software-partners)
+- [Resellers](https://www.worldviz.com/virtual-reality-software-resellers)
+
+## Blog
+
+- [Blog](https://www.worldviz.com/virtual-reality-blog)
+- [Blog RSS](https://www.worldviz.com/post/rss.xml)
+
+## What WorldViz does not publish
+
+Probed 2026-09-04 and confirmed absent, so an agent does not spend calls looking:
+
+- No OpenAPI, Swagger, GraphQL SDL, AsyncAPI or Protobuf/WSDL contract. /openapi.json,
+  /openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs, /redoc and /graphql all return
+  404 on worldviz.com, www.worldviz.com and docs.worldviz.com.
+- No /.well-known/ documents on any of eight WorldViz hosts — no security.txt, api-catalog,
+  openid-configuration, oauth-authorization-server, ai-plugin.json, agent-card.json or
+  agent.json.
+- No A2A agent card and no MCP server.
+- No llms.txt of WorldViz's own (this file is ours, not theirs).
+- No status page (status.worldviz.com does not resolve), no SLA, no deprecation policy.
+- No privacy policy at any conventional path on worldviz.com.
+- No first-party package in npm, PyPI, Maven Central, NuGet, RubyGems, Packagist, crates.io
+  or pkg.go.dev. The PyPI package "vizard" and the npm package "vizard" belong to unrelated
+  third parties and must not be attributed to WorldViz.

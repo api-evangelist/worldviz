@@ -1,0 +1,65 @@
+generated: '2026-09-04'
+method: searched
+source: https://docs.worldviz.com/vizard/latest/highlights.htm
+name: Vizard Release Notes
+description: >-
+  WorldViz publishes a dated "What's New in Vizard 8" page in the Vizard documentation. It is
+  the only dated release log WorldViz publishes; there is no separate developer changelog,
+  because there is no web API to version.
+subject: Vizard VR development toolkit (desktop software), not a web API
+url: https://docs.worldviz.com/vizard/latest/highlights.htm
+http_status: 200
+scheme: semantic-ish MAJOR.MINOR[.PATCH]
+current_version: 8.3.1
+current_version_source: >-
+  Documentation build stamp on every docs.worldviz.com/vizard/latest/ page reads 8.3.1.
+python_runtime: 3.13.5
+breaking_change_guide: https://docs.worldviz.com/vizard/latest/Upgrade_guide.htm
+version_history_evidence:
+  url: https://docs.worldviz.com/robots.txt
+  http_status: 200
+  note: >-
+    The documentation robots.txt enumerates every archived Vizard documentation build, which
+    is the fullest public record of the release lineage: 3.18.0002, 4.10.0005, 5.0 through
+    5.9, 6.0 through 6.4, 7.0, 7.1, 7.1.1, 7.2, 7.2.1, 7.3 through 7.7, 8.0-dev2.1, 8.0-dev3,
+    8.0, 8.1, 8.3, 8.3.1. Archived docs for each version remain served but are excluded from
+    indexing.
+entries:
+- version: '8.3'
+  date: '2025-12-05'
+  breaking: false
+  additions:
+  - Orthographic view mode in Inspector
+  - Flythrough navigation mode in Inspector
+  - Cascaded Shadow Maps support in Inspector
+  fixes:
+  - Updated bundled Python to 3.13.5
+  - Debugger was not displaying local variables correctly
+  - Updated vizmatplot to work with newer versions of matplotlib
+- version: '8.2'
+  date: '2025-02-04'
+  breaking: false
+  additions:
+  - OpenXR support for HTC passthrough and eye tracking extensions
+- version: '8.1'
+  date: '2024-12-23'
+  breaking: false
+  fixes:
+  - Package Manager search updated to work with the latest version of PyPI
+- version: '8.0'
+  date: '2024-11-11'
+  breaking: true
+  breaking_notes:
+  - Bundled Python moved from 3.8 to 3.13
+  - Vizard 8 requires Windows 10 or above
+  - PIL/Pillow is no longer bundled and must be installed via the Package Manager
+  additions:
+  - Vizard updated to Python 3.13
+  guide: https://docs.worldviz.com/vizard/latest/Upgrade_guide.htm
+window: >-
+  Vizard 8 series only. Release notes for the 3.x through 7.x lines live in the archived
+  per-version documentation builds listed in the version_history_evidence note above.
+gaps:
+- No RSS or JSON feed of releases.
+- No 8.3.1 entry on the What's New page even though the docs build stamp reads 8.3.1.
+- Release notes are prose inside the product documentation, not a machine-readable feed.

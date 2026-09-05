@@ -1,0 +1,26 @@
+generated: '2026-09-04'
+method: searched
+source: https://docs.worldviz.com/vizard/latest/
+name: WorldViz Rate Limits
+description: >-
+  An honest zero. WorldViz publishes no HTTP API, so there is no request quota, no window, no
+  burst allowance, no X-RateLimit-*/RateLimit-*/Retry-After response header and no 429 to
+  document. The nearest published runtime constraint is a licence limit, not a rate limit.
+limit_count: 0
+applicable: false
+applicability_note: >-
+  Rate limiting is a property of a hosted request surface. WorldViz's developer surface is a
+  locally installed Python toolkit (Vizard) and its plugins; calls execute in-process on the
+  user's own workstation.
+limits: []
+response_headers: []
+exhaustion_status: null
+related_product_limits:
+- limit: 5-minute script runtime cap
+  applies_to: Vizard Free edition
+  source: https://www.worldviz.com/vizard-vr-software-faq
+  note: A licence-tier restriction on the desktop product, not an API rate limit.
+pointer_withheld: >-
+  No `RateLimits` pointer is emitted. The type asserts a published runtime rate-limit signal
+  an agent can read; a recorded zero on a provider with no request surface must not score as
+  one.
