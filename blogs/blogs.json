@@ -1,0 +1,21 @@
+{
+  "repo": "worldviz",
+  "feeds": [
+    {
+      "source": "https://www.worldviz.com/vizard-vr-software-faq",
+      "feed_url": "https://www.worldviz.com/vizard-vr-software-faq",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
+      "source": "https://www.worldviz.com/virtual-reality-blog",
+      "feed_url": "https://www.worldviz.com/virtual-reality-blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-09-06T19:17:18Z"
+}
