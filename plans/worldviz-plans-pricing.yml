@@ -66,3 +66,34 @@ pricing_pointer_withheld: >-
   No `Pricing` pointer is emitted. WorldViz has no page that states a price — the sales page
   is a contact form and the edition comparison carries no figures — so a Pricing pointer
   would credit published pricing the company does not publish.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Free
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Academic
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Development
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
