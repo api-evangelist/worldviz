@@ -35,6 +35,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: RateLimits
+  url: rate-limits/worldviz-rate-limits.yml
 - type: Pricing
   url: https://www.worldviz.com/vizard-virtual-reality-software
 - type: DomainSecurity
