@@ -64,25 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-WorldViz LLC is a Santa Barbara, California virtual reality company that builds VR software and
-turnkey systems for academic research, training and simulation. Its developer surface is **Vizard**,
-a Python 3.13 VR development toolkit and IDE for Windows with a documented command reference of
-roughly 1,182 commands across 36 modules, extended by the **SightLab VR Pro** experiment-authoring
-plugin, the **Vizible** collaboration product, **PPT** precision motion tracking, and **PRISM**
-projection and simulation room systems.
+WorldViz LLC is a Santa Barbara, California virtual reality company that builds VR software and turnkey systems for academic research, training and simulation. Its developer surface is Vizard, a Python 3.13 VR development toolkit and IDE for Windows with a documented command reference of roughly 1,182 commands across 36 modules, extended by the SightLab VR Pro experiment-authoring plugin, the Vizible collaboration product, PPT precision motion tracking, and PRISM projection and simulation room systems. WorldViz publishes no web API: no OpenAPI, AsyncAPI, GraphQL schema, MCP server, agent card or .well-known document was found on any of its eight public hosts. Its machine-relevant surface is the Vizard Python library reference, its dated release notes, and its downloadable installers.
 
-WorldViz publishes **no web API**. Probed 2026-09-04 across all eight of its public hosts
-(`worldviz.com`, `www.worldviz.com`, `docs.worldviz.com`, `help.worldviz.com`, `kb.worldviz.com`,
-`forum.worldviz.com`, `sightlab2.worldviz.com`, `vizmove-guide.worldviz.com`): no OpenAPI, Swagger,
-GraphQL SDL, AsyncAPI, Protobuf or WSDL contract; no `/.well-known/` document of any kind; no MCP
-server; no A2A agent card. What it does publish is a complete, sitemapped, human-readable Python
-command reference, dated Vizard release notes, a full end-user licence agreement, and version-pinned
-first-party installers.
+**Areas:** Virtual Reality · Augmented Reality · Simulation · Research · Training · 3D Graphics · Eye Tracking · Motion Tracking · Python · Software
 
-- Website — https://www.worldviz.com/
-- Documentation — https://docs.worldviz.com/vizard/latest/
-- Command reference — https://docs.worldviz.com/vizard/latest/commands/commandIndex.htm
-- Release notes — https://docs.worldviz.com/vizard/latest/highlights.htm
-- Downloads — https://www.worldviz.com/virtual-reality-software-downloads
-- Community forum — https://forum.worldviz.com/
-- GitHub — https://github.com/worldviz
+## WorldViz on APIs.io
+
+Everything profiled for WorldViz is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/worldviz/](https://apis.io/providers/worldviz/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Worldviz Domain Security](https://apis.io/security/worldviz/worldviz-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Worldviz Plans Pricing](https://apis.io/plans/worldviz/worldviz-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Worldviz Rate Limits](https://apis.io/rate-limits/worldviz/worldviz-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.worldviz.com/)
+- [Documentation](https://docs.worldviz.com/vizard/latest/)
+- [Getting started](https://docs.worldviz.com/vizard/latest/Installation.htm)
+- [API reference](https://docs.worldviz.com/vizard/latest/commands/commandIndex.htm)
+- [Pricing](https://www.worldviz.com/vizard-virtual-reality-software)
+- [Support](https://www.worldviz.com/virtual-reality-support)
+- [Blog](https://www.worldviz.com/virtual-reality-blog)
+- [Terms of service](https://docs.worldviz.com/vizard/latest/Legal_stuff.htm)
+- [GitHub](https://github.com/worldviz)
+
+## API Evangelist rating
+
+**Kin Score 24.8** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 52.6 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/worldviz/](https://apis.io/providers/worldviz/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for WorldViz: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/worldviz/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
